@@ -4,7 +4,7 @@ This is the instructions for installing and running the vmfarms.py app
 
 There are 6 files included.
 
-db_query.py  requirements.txt  vmfarms.db  vmfarms.py Dockerfile docker_compose.yaml
+db_query.py  requirements.txt  vmfarms.db  vmfarms.py Dockerfile docker-compose.yaml
 
 
 requirements.txt
@@ -27,7 +27,7 @@ Dockerfile
 
 	- the dockerfile used for image creation
 
-docker_compose.yaml
+docker-compose.yaml
 
 	- used to configure the building of the docker container
 

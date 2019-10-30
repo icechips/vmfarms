@@ -1,0 +1,8 @@
+version: '3'
+services:
+        vmfarms:
+                build: .
+                ports:
+                        - "5000:5000"
+                volumes:
+                        - .:/vmfarms

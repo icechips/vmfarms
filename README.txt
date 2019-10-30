@@ -37,7 +37,7 @@ docker-compose.yaml
 
 #INSTALL
 
-Once the directory is pulled from git, we just need to issue a docker compose inside of the directory
+Once the directory is pulled from github, we just need to issue a docker compose inside of the directory
 
 	docker-compose up
 

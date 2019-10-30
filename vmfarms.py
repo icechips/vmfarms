@@ -4,6 +4,14 @@ from flask import Flask, request
 import sqlite3
 
 
+#check if db exists, create the db if it dosent
+conn = sqlite3.connect('vmfarms.db')
+
+conn.execute('CREATE TABLE IF NOT EXISTS names (name TEXT)')
+
+conn.close()
+
+
 #creates a flask app object
 app = Flask(__name__)
 

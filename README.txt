@@ -4,16 +4,12 @@ This is the instructions for installing and running the vmfarms.py app
 
 There are 7 files included.
 
-db_create.py  db_query.py  requirements.txt  vmfarms.db  vmfarms.py Dockerfile docker-compose.yaml
+db_query.py  requirements.txt  vmfarms.db  vmfarms.py Dockerfile docker_compose.yaml
 
 
 requirements.txt
 	
 	- used to install dependencies for the app
-
-db_create.py
-
-	- this script is run once, to setup the apps database
 
 db_query.py
 
@@ -21,17 +17,17 @@ db_query.py
 
 vmfarms.db
 
-	- the apps database
+	- the apps database (created after the first run)
 
 vmfarms.py
 
-	- this script hosts the flask webserver, and handles the write to the db and the url endpoint/argument
+	- this script hosts the flask webserver, and handles the create/write to the db and the url endpoint/argument
 
 Dockerfile
 
 	- the dockerfile used for image creation
 
-docker-compose.yaml
+docker_compose.yaml
 
 	- used to configure the building of the docker container
 
@@ -40,6 +36,8 @@ docker-compose.yaml
 Once the directory is pulled from github, we just need to issue a docker compose inside of the directory
 
 	docker-compose up
+
+Note: The version in the docker-compose.yaml is set to '3'. If you get a version error, you can change the version in the file to one that satisifes your system.
 
 #USEAGE
 

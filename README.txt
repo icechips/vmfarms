@@ -2,7 +2,7 @@ This is the instructions for installing and running the vmfarms.py app
 
 #CONTENTS
 
-There are 7 files included.
+There are 6 files included.
 
 db_query.py  requirements.txt  vmfarms.db  vmfarms.py Dockerfile docker_compose.yaml
 
